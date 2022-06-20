@@ -22,7 +22,8 @@ function Contact() {
       method: "post",
       url: `${process.env.NEXT_PUBLIC_API_URL}/api/contact`,
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "text/html",
+        "Accept": "application/json"
       },
       data: {name: values.name,
         phone: values.phone,
