@@ -23,12 +23,7 @@ function Contact() {
       headers: {
         "Content-Type": "application/json",
       },
-      data: {name:values.target.name,
-              email:values.target.email,
-              phone:values.target.phone,
-              subject:values.target.subject,
-              message:values.target.message,
-      },
+      data: values,
     };
     try {
       const response = await axios(config);
