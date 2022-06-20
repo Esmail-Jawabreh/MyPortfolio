@@ -19,7 +19,7 @@ function Contact() {
   async function onSubmitForm(values) {
     const config = {
       method: "post",
-      url: `${process.env.NEXT_PUBLIC_API_URL}/api/contact`,
+      url: 'https://my-portfolio-843hn9qe3-dialaabulkhail.vercel.app/',
       headers: {
         "Content-Type": "application/json",
       },

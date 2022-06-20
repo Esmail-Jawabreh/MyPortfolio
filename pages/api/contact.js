@@ -1,6 +1,5 @@
 import nodemailer from 'nodemailer'
 
-
 export default async (req, res) => {
   const {name, phone, email, subject, message} = req.body
 
