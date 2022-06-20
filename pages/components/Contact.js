@@ -18,19 +18,13 @@ function Contact() {
 
   async function onSubmitForm(values) {
   
-    const config = {
+    let config = {
       method: "post",
       url: `${process.env.NEXT_PUBLIC_API_URL}/api/contact`,
       headers: {
-        "Content-Type": "text/html",
-        "Accept": "application/json"
+        "Content-Type": "application/json",
       },
-      data: {name: values.name,
-        phone: values.phone,
-        email: values.email,
-        subject: values.subject,
-        message: values.message,
-      },
+      data: values,
     };
     try {
       const response = await axios(config);
