@@ -19,7 +19,7 @@ function Contact() {
   async function onSubmitForm(values) {
     const config = {
       method: "post",
-      url:process.env.NEXT_PUBLIC_API_URL,
+      url: `${process.env.NEXT_PUBLIC_API_URL}/api/contact`,
       headers: {
         "Content-Type": "application/json",
       },
