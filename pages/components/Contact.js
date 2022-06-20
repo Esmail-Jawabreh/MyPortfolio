@@ -22,7 +22,7 @@ function Contact() {
       method: "post",
       url: `${process.env.NEXT_PUBLIC_API_URL}/api/contact`,
       headers: {
-        "Content-Type": "text/html",
+        "Content-Type": "application/json",
       },
       data: {name: values.name,
         phone: values.phone,
