@@ -1,7 +1,7 @@
 import nodemailer from 'nodemailer'
 
 export default async (req, res) => {
-  const {name, phone, email, subject, message} = req.body
+  const {name, phone, email, subject, message} = JSON.parse(req.body)
 
   const transporter = nodemailer.createTransport({
     host:'smtp.gmail.com',
