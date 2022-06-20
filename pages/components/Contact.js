@@ -1,6 +1,6 @@
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+import { BsChevronDoubleLeft, BsFillPersonLinesFill } from "react-icons/bs";
 import Link from "next/link";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import Image from "next/image";
@@ -17,13 +17,19 @@ function Contact() {
   // console.log(errors)
 
   async function onSubmitForm(values) {
+  
     const config = {
       method: "post",
       url: `${process.env.NEXT_PUBLIC_API_URL}/api/contact`,
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "text/html",
       },
-      data: values,
+      data: {name: values.name,
+        phone: values.phone,
+        email: values.email,
+        subject: values.subject,
+        message: values.message,
+      },
     };
     try {
       const response = await axios(config);
