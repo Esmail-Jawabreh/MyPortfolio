@@ -5,7 +5,38 @@ import Link from "next/link";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import Image from "next/image";
 
+// to handle the form
+import { useForm } from "react-hook-form";
+import axios from "axios";
+import { useRouter } from "next/router";
+
 function Contact() {
+  const { register, handleSubmit, errors, reset } = useForm();
+  const router = useRouter();
+
+  // console.log(errors)
+
+  async function onSubmitForm(values) {
+    const config = {
+      method: "post",
+      url: `${process.env.NEXT_PUBLIC_API_URL}/api/contact`,
+      headers: {
+        "Content-Type": "application/json",
+      },
+      data: values,
+    };
+    try {
+      const response = await axios(config);
+      if (response.status === 200) {
+        reset();
+        router.push("/");
+      }
+      console.log(response);
+    } catch (err) {
+      console.log(err);
+    }
+  }
+
   return (
     <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
@@ -32,7 +63,8 @@ function Contact() {
                 </p>
               </div>
               <div>
-                <p className="pt-24 text-center uppercase">get in touch!</p>
+                <p className="pt-24 text-center uppercas">get in touch!</p>
+
                 <div className="flex items-center justify-between py-4 ">
                   <div className="p-4 duration-200 ease-in rounded-full shadow-md cursor-pointer shadow-teal-200 hover:scale-125">
                     <a href="https://www.linkedin.com/in/dialaabulkhail/">
@@ -61,14 +93,20 @@ function Contact() {
 
           {/* right */}
           <div className="w-full h-auto col-span-3 shadow-xl rounded-xl lg:p-4">
-            <dev className="p-4">
-              <form>
+            <div className="p-4">
+              <form onSubmit={handleSubmit(onSubmitForm)}>
                 <div className="grid w-full gap-4 py-2 md:grid-cols-2">
                   <div className="flex flex-col">
                     <label className="py-2 text-sm uppercase">Name</label>
                     <input
                       className="flex p-3 border-2 border-gray-200 rounded-lg caret-teal-200"
                       type="text"
+                      name="name"
+                      {...register("name", {
+                        required: {
+                          value: true,
+                        },
+                      })}
                     />
                   </div>
 
@@ -79,6 +117,12 @@ function Contact() {
                     <input
                       className="flex p-3 border-2 border-gray-200 rounded-lg caret-teal-200"
                       type="text"
+                      name="phone"
+                      {...register("phone", {
+                        required: {
+                          value: false,
+                        },
+                      })}
                     />
                   </div>
                 </div>
@@ -88,6 +132,12 @@ function Contact() {
                   <input
                     className="flex p-3 border-2 border-gray-200 rounded-lg caret-teal-200"
                     type="email"
+                    name="email"
+                    {...register("email", {
+                      required: {
+                        value: true,
+                      },
+                    })}
                   />
                 </div>
 
@@ -96,7 +146,14 @@ function Contact() {
                   <input
                     className="flex p-3 border-2 border-gray-200 rounded-lg caret-teal-200"
                     type="text"
+                    name="subject"
+                    {...register("subject", {
+                      required: {
+                        value: true,
+                      },
+                    })}
                   />
+                  <span>{errors?.subject?.message}</span>
                 </div>
 
                 <div className="flex flex-col py-2">
@@ -104,13 +161,20 @@ function Contact() {
                   <textarea
                     className="p-3 border-2 border-gray-300 rounded-lg caret-teal-200"
                     rows="10"
+                    name="message"
+                    {...register("message", {
+                      required: {
+                        value: false,
+                      },
+                    })}
                   ></textarea>
                 </div>
-                <Link href="/">
-                <button className="w-full p-3 mt-4">Send Message</button>
-                </Link>
+
+                <button type="submit" className="w-full p-3 mt-4 bg-teal-400">
+                  Send Message
+                </button>
               </form>
-            </dev>
+            </div>
           </div>
         </div>
 
