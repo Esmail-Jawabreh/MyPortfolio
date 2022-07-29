@@ -25,12 +25,10 @@ function About() {
             <p className="max-w-[400px]">My study of software development has hugely improved my problem solving and analytical thinking 
               skills, as well as my enthusiasm and willigness towards accepting any challenge that can 
               enhance my knowledge in this field.
-              <br/>
-              I believe I have the ability to deliver createive, high-quality web applications using Python and JavaScript based tools.
-              </p>
+               </p>
 <br/>
         </div>
-        <div className="lg:py-[300px]">
+        <div className="lg:pt-[200px] ">
           <Image
             className="rounded-full "
             src={me}

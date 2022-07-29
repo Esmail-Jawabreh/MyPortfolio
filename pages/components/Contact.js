@@ -4,40 +4,26 @@ import { BsChevronDoubleLeft, BsFillPersonLinesFill } from "react-icons/bs";
 import Link from "next/link";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import Image from "next/image";
+import emailjs from "@emailjs/browser";
+import Router from 'next/router'
 
-// to handle the form
-import { useForm } from "react-hook-form";
-import axios from "axios";
-import { useRouter } from "next/router";
-
-function Contact() {
-  const { register, handleSubmit, errors, reset } = useForm();
-  const router = useRouter();
-
-  // console.log(errors)
-
-  async function onSubmitForm(values) {
+  function Contact() {
   
-    let config = {
-      method: "post",
-      url: `${process.env.NEXT_PUBLIC_API_URL}/api/contact`,
-      headers: {
-        "Content-Type": "multipart/form-data",
-      },
-      data: values,
-    };
-    try {
-      const response = await axios(config);
-      if (response.status === 200) {
-        reset();
-        router.push("/");
-      }
-      console.log(response);
-    } catch (err) {
-      console.log(err);
-    }
+  function sendEmail(e) {
+    e.preventDefault();
+    Router.push('/')
+    alert("Your message was sent. Thank you for contacting me!")
+    
+
+    emailjs.sendForm(
+      "service_19mckop",
+      "template_2qf2ml4",
+      e.target,
+      "AL4X4TAccfBeR34fy"
+    );
   }
 
+  
   return (
     <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[750px] m-auto px-2 py-16 w-full">
@@ -96,19 +82,16 @@ function Contact() {
           {/* right */}
           <div className="w-full h-auto col-span-3 shadow-xl rounded-xl lg:p-4">
             <div className="p-4">
-              <form onSubmit={handleSubmit(onSubmitForm)}>
+              <form onSubmit={sendEmail}>
                 <div className="grid w-full gap-4 py-2 md:grid-cols-2">
                   <div className="flex flex-col">
                     <label className="py-2 text-sm uppercase">Name</label>
                     <input
-                      className="flex p-1 border-2 border-gray-200 rounded-lg "
+                      className="flex p-1 text-gray-800 border-2 border-gray-200 rounded-lg"
                       type="text"
                       name="name"
-                      {...register("name", {
-                        required: {
-                          value: true,
-                        },
-                      })}
+                      required=""
+                 
                     />
                   </div>
 
@@ -117,14 +100,10 @@ function Contact() {
                       Phone Number
                     </label>
                     <input
-                      className="flex p-1 border-2 border-gray-200 rounded-lg "
+                      className="flex p-1 text-gray-800 border-2 border-gray-200 rounded-lg"
                       type="text"
                       name="phone"
-                      {...register("phone", {
-                        required: {
-                          value: false,
-                        },
-                      })}
+                      required=""
                     />
                   </div>
                 </div>
@@ -132,43 +111,31 @@ function Contact() {
                 <div className="flex flex-col py-2">
                   <label className="py-2 text-sm uppercase">Email</label>
                   <input
-                    className="flex p-1 border-2 border-gray-200 rounded-lg "
+                    className="flex p-1 text-gray-800 border-2 border-gray-200 rounded-lg"
                     type="email"
                     name="email"
-                    {...register("email", {
-                      required: {
-                        value: true,
-                      },
-                    })}
+                    required=""
                   />
                 </div>
 
                 <div className="flex flex-col py-2">
                   <label className="py-2 text-sm uppercase">Subject</label>
                   <input
-                    className="flex p-1 border-2 border-gray-200 rounded-lg "
+                    className="flex p-1 text-gray-800 border-2 border-gray-200 rounded-lg"
                     type="text"
                     name="subject"
-                    {...register("subject", {
-                      required: {
-                        value: true,
-                      },
-                    })}
+                    required=""
                   />
-                  <span>{errors?.subject?.message}</span>
+
                 </div>
 
                 <div className="flex flex-col py-2">
                   <label className="py-2 text-sm uppercase">message</label>
                   <textarea
-                    className="p-3 border-2 border-gray-300 rounded-lg "
+                    className="p-3 text-gray-800 border-2 border-gray-300 rounded-lg "
                     rows="5"
                     name="message"
-                    {...register("message", {
-                      required: {
-                        value: false,
-                      },
-                    })}
+                    required=""
                   ></textarea>
                 </div>
 

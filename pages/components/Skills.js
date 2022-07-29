@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Skills() {
   return (
-    <div id="skills" className="w-full p-2 lg:h-screen">
+    <div id="skills" className="w-full p-2 mt-10 lg:h-screen">
       <div className="max-w-[750px] mx-auto flex flex-col justify-center h-full">
         <h2 className="py-10 tracking-widest uppercase animate-pulse">
           Skills

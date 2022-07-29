@@ -56,7 +56,7 @@ function Projects() {
                 TUTORium Webapp
               </h3>
               <p className="pt-2 pb-4 text-center">Django-React</p>
-              <Link href="/Movies">
+              <Link href="/Tutorium">
                 <p className="py-2 text-lg font-bold text-center text-white bg-gray-500 rounded-lg cursor-pointer">
                   More
                 </p>
@@ -80,7 +80,7 @@ function Projects() {
                 Blogit Webpage
               </h3>
               <p className="pt-2 pb-4 text-center">Sanity-Next.JS</p>
-              <Link href="/Movies">
+              <Link href="/Blogit">
                 <p className="py-2 text-lg font-bold text-center text-white bg-gray-500 rounded-lg cursor-pointer">
                   More
                 </p>
@@ -125,7 +125,7 @@ function Projects() {
                 To Do App
               </h3>
               <p className="pt-2 pb-4 text-center">Django</p>
-              <Link href="/">
+              <Link href="/Todo">
                 <p className="py-2 text-lg font-bold text-center text-white bg-gray-500 rounded-lg cursor-pointer">
                   More
                 </p>
