@@ -3,19 +3,20 @@ import Image from "next/image";
 function Skills() {
   return (
     <div id="skills" className="w-full p-2 lg:h-screen">
-      <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-        <h2 className="py-10 tracking-widest text-teal-700 uppercase">
+      <div className="max-w-[750px] mx-auto flex flex-col justify-center h-full">
+        <h2 className="py-10 tracking-widest uppercase animate-pulse">
           Skills
         </h2>
+        <hr/>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 ">
-          <div className="p-5 duration-200 ease-in rounded-full shadow-xl ">
+          <div className="p-5 duration-200 ease-in rounded-full ">
             <div className="grid items-center justify-center grid-cols-2 gap-4">
               <div className="m-auto">
                 <Image
                   src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png"
-                  width="64px"
-                  height="64px"
-                  alt="github"
+                  width="40px"
+                  height="40px"
+        
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -24,14 +25,14 @@ function Skills() {
             </div>
           </div>
 
-          <div className="p-5 duration-200 ease-in rounded-full shadow-xl">
+          <div className="p-5 duration-200 ease-in rounded-full ">
             <div className="grid items-center justify-center grid-cols-2 gap-4">
               <div className="m-auto">
                 <Image
                   src="https://github.com/fireclint/portfolio-nextjs/blob/main/public/assets/skills/css.png?raw=true"
-                  width="64px"
-                  height="64px"
-                  alt="github"
+                  width="40px"
+                  height="40px"
+       
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -40,14 +41,14 @@ function Skills() {
             </div>
           </div>
 
-          <div className="p-5 duration-200 ease-in rounded-full shadow-xl">
+          <div className="p-5 duration-200 ease-in rounded-full ">
             <div className="grid items-center justify-center grid-cols-2 gap-4">
               <div className="m-auto">
                 <Image
                   src="https://github.com/fireclint/portfolio-nextjs/blob/main/public/assets/skills/html.png?raw=true"
-                  width="64px"
-                  height="64px"
-                  alt="github"
+                  width="40px"
+                  height="40px"
+           
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -56,14 +57,14 @@ function Skills() {
             </div>
           </div>
 
-          <div className="p-5 duration-200 ease-in rounded-full shadow-xl ">
+          <div className="p-5 duration-200 ease-in rounded-full ">
             <div className="grid items-center justify-center grid-cols-2 gap-4">
               <div className="m-auto">
                 <Image
                   src="https://github.com/fireclint/portfolio-nextjs/blob/main/public/assets/skills/javascript.png?raw=true"
-                  width="64px"
-                  height="64px"
-                  alt="github"
+                  width="40px"
+                  height="40px"
+                
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -72,14 +73,14 @@ function Skills() {
             </div>
           </div>
 
-          <div className="p-5 duration-200 ease-in rounded-full shadow-xl">
+          <div className="p-5 duration-200 ease-in rounded-full ">
             <div className="grid items-center justify-center grid-cols-2 gap-4">
               <div className="m-auto">
                 <Image
                   src="https://github.com/fireclint/portfolio-nextjs/blob/main/public/assets/skills/github1.png?raw=true"
-                  width="64px"
-                  height="64px"
-                  alt="github"
+                  width="40px"
+                  height="40px"
+         
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -88,14 +89,14 @@ function Skills() {
             </div>
           </div>
 
-          <div className="p-5 duration-200 ease-in rounded-full shadow-xl">
+          <div className="p-5 duration-200 ease-in rounded-full ">
             <div className="grid items-center justify-center grid-cols-2 gap-4">
               <div className="m-auto">
                 <Image
                   src="https://github.com/fireclint/portfolio-nextjs/blob/main/public/assets/skills/node.png?raw=true"
-                  width="64px"
-                  height="64px"
-                  alt="github"
+                  width="40px"
+                  height="40px"
+         
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -104,15 +105,15 @@ function Skills() {
             </div>
           </div>
 
-          <div className="p-5 duration-200 ease-in rounded-full shadow-xl">
+          <div className="p-5 duration-200 ease-in rounded-full ">
             <div className="grid items-center justify-center grid-cols-2 gap-4">
               <div className="m-auto">
                 <Image
                   src="
                   https://iconape.com/wp-content/files/gm/82643/svg/next-js.svg"
-                  width="64px"
-                  height="64px"
-                  alt="github"
+                  width="40px"
+                  height="40px"
+                
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -121,14 +122,14 @@ function Skills() {
             </div>
           </div>
 
-          <div className="p-5 duration-200 ease-in rounded-full shadow-xl ">
+          <div className="p-5 duration-200 ease-in rounded-full ">
             <div className="grid items-center justify-center grid-cols-2 gap-4">
               <div className="m-auto">
                 <Image
                   src="https://github.com/fireclint/portfolio-nextjs/blob/main/public/assets/skills/react.png?raw=true"
-                  width="64px"
-                  height="64px"
-                  alt="github"
+                  width="40px"
+                  height="40px"
+    
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -137,14 +138,15 @@ function Skills() {
             </div>
           </div>
 
-          <div className="p-5 duration-200 ease-in rounded-full shadow-xl ">
+          <div className="p-5 duration-200 ease-in rounded-full ">
             <div className="grid items-center justify-center grid-cols-2 gap-4">
-              <div className="m-auto">
+              <div className="m-auto ">
                 <Image
-                  src="https://mpng.subpng.com/20180711/rtc/kisspng-django-web-development-web-framework-python-softwa-django-5b45d913f29027.4888902515313042119936.jpg"
+                  src="https://img.icons8.com/external-tal-revivo-light-tal-revivo/344/external-django-a-high-level-python-web-framework-that-encourages-rapid-development-logo-light-tal-revivo.png"
                   width="110px"
-                  height="70px"
-                  alt="github"
+                  height="100px"
+               
+        
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -153,14 +155,14 @@ function Skills() {
             </div>
           </div>
 
-          <div className="p-5 duration-200 ease-in rounded-full shadow-xl ">
+          <div className="p-5 duration-200 ease-in rounded-full ">
             <div className="grid items-center justify-center grid-cols-2 gap-4">
               <div className="m-auto">
                 <Image
-                  src="https://w7.pngwing.com/pngs/134/956/png-transparent-markdown-computer-icons-formatted-text-github-watermark-blue-angle-text.png"
-                  width="64px"
-                  height="64px"
-                  alt="github"
+                  src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png"
+                  width="40px"
+                  height="40px"
+         
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -169,14 +171,14 @@ function Skills() {
             </div>
           </div>
 
-          <div className="p-5 duration-200 ease-in rounded-full shadow-xl ">
+          <div className="p-5 duration-200 ease-in rounded-full ">
             <div className="grid items-center justify-center grid-cols-2 gap-4">
               <div className="m-auto">
                 <Image
                   src="https://img.icons8.com/color/480/tensorflow.png"
-                  width="64px"
-                  height="64px"
-                  alt="github"
+                  width="40px"
+                  height="40px"
+        
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -185,14 +187,14 @@ function Skills() {
             </div>
           </div>
 
-          <div className="p-5 duration-200 ease-in rounded-full shadow-xl ">
+          <div className="p-5 duration-200 ease-in rounded-full ">
             <div className="grid items-center justify-center grid-cols-2 gap-4">
               <div className="m-auto">
                 <Image
                   src="https://github.com/fireclint/portfolio-nextjs/blob/main/public/assets/skills/tailwind.png?raw=true"
-                  width="64px"
-                  height="64px"
-                  alt="github"
+                  width="40px"
+                  height="40px"
+            
                 />
               </div>
               <div className="flex flex-col items-center justify-center">

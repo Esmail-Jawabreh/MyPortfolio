@@ -19,7 +19,8 @@ module.exports = {
       "e7.pngegg.com",
       "banner2.cleanpng.com",
       "img.icons8.com",
-      'mpng.subpng.com'
+      'mpng.subpng.com',
+      'o.remove.bg'
     ],
   },
 };
