@@ -12,30 +12,37 @@ function Main() {
             .
           </h1>
           <div >
-            <h2 className="py-2 text-gray-500 uppercase">
-            Full stack software developer
+            <h2 className="py-3 text-gray-500 uppercase">
+            <span className="inline-flex h-20 pt-2 overflow-x-hidden animate-type group-hover:animate-type-reverse whitespace-nowrap text-brand-accent will-change-transform">Full stack software developer </span>
+
+            <span className="box-border inline-block w-1 h-10 ml-2 -mb-2 bg-white md:-mb-4 md:h-16 animate-cursor will-change-transform"></span>
+       
             </h2>
-            <p className="py-4 m-auto tracking-widest text-gray-400 uppercase">
+            {/* <p className="py-4 m-auto tracking-widest text-gray-400 uppercase">
             Learn More About Me!
-              {" "}
-            </p>
+             
+                         </p> */}
+                         <hr className="py-1"/>
             <div className="flex items-center justify-between max-w-[330px] m-auto p-2">
-              <div className="p-4 duration-200 ease-in rounded-full shadow-md cursor-pointer shadow-teal-200 hover:scale-125">
+         <hr/>
+             
+              <div className="p-4 duration-200 ease-in rounded-full shadow-md cursor-pointer shadow-white hover:scale-125">
+              
                 <a href="https://www.linkedin.com/in/dialaabulkhail/">
                 <FaLinkedinIn />
                 </a>
               </div>
-              <div className="p-4 duration-200 ease-in rounded-full shadow-md cursor-pointer shadow-teal-200 hover:scale-125">
+              <div className="p-4 duration-200 ease-in rounded-full shadow-md cursor-pointer shadow-white hover:scale-125">
                 <a href="https://github.com/dialaabulkhail">
                 <FaGithub />
                 </a>
               </div>
-              <div className="p-4 duration-200 ease-in rounded-full shadow-md cursor-pointer shadow-teal-200 hover:scale-125">
+              <div className="p-4 duration-200 ease-in rounded-full shadow-md cursor-pointer shadow-white hover:scale-125">
                 <a href="mailto:diala.sh.98@gmail.com">
                 <AiOutlineMail />
                 </a>
               </div>
-              <div className="p-4 duration-200 ease-in rounded-full shadow-md cursor-pointer shadow-teal-200 hover:scale-125">
+              <div className="p-4 duration-200 ease-in rounded-full shadow-md cursor-pointer shadow-white hover:scale-125">
                 <a href="https://dialabk.hashnode.dev/">
                 <BsFillPersonLinesFill />
                 </a>

@@ -10,7 +10,7 @@ function AiTraffic() {
         <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10">
             <Image className="absolute z-1" layout="fill" objectFit="cover" src={traffic} alt="/"/>
             <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-                <h2 className="py-2 bg-black/50">AI TRAFFIC SYSTEM</h2>
+                <h2 className="py-2 pl-2 bg-gray-800/70">AI TRAFFIC SYSTEM</h2>
                 <h3>Python | Pygame</h3>
             </div>
         </div>
@@ -26,10 +26,10 @@ function AiTraffic() {
             hour of the day in order to help people save time, and avoid traffic congestions as possible.
             </p>
             <a href="https://github.com/dialaabulkhail/AI_Traffic_system">
-            <button className="px-8 py-2 mt-4 mr-8">Code</button>
+            <button className="px-8 py-2 mt-4 mr-8 text-gray-500 duration-150 ease-in-out hover:scale-105">Code</button>
             </a>
             <a href="https://dialabk.hashnode.dev/ai-traffic-system-with-python">
-            <button className="px-8 py-2 mt-4">Blog</button>
+            <button className="px-8 py-2 mt-4 text-gray-500 duration-150 ease-in-out hover:scale-105">Demo</button>
             </a>
         </div>
         <div className="col-span-4 p-4 shadow-xl md:col-span-1 rounded-xl">

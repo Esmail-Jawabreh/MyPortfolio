@@ -4,46 +4,33 @@ import { BsChevronDoubleLeft, BsFillPersonLinesFill } from "react-icons/bs";
 import Link from "next/link";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import Image from "next/image";
+import emailjs from "@emailjs/browser";
+import Router from 'next/router'
 
-// to handle the form
-import { useForm } from "react-hook-form";
-import axios from "axios";
-import { useRouter } from "next/router";
-
-function Contact() {
-  const { register, handleSubmit, errors, reset } = useForm();
-  const router = useRouter();
-
-  // console.log(errors)
-
-  async function onSubmitForm(values) {
+  function Contact() {
   
-    let config = {
-      method: "post",
-      url: `${process.env.NEXT_PUBLIC_API_URL}/api/contact`,
-      headers: {
-        "Content-Type": "multipart/form-data",
-      },
-      data: values,
-    };
-    try {
-      const response = await axios(config);
-      if (response.status === 200) {
-        reset();
-        router.push("/");
-      }
-      console.log(response);
-    } catch (err) {
-      console.log(err);
-    }
+  function sendEmail(e) {
+    e.preventDefault();
+    Router.push('/')
+    alert("Your message was sent. Thank you for contacting me!")
+    
+
+    emailjs.sendForm(
+      "service_19mckop",
+      "template_2qf2ml4",
+      e.target,
+      "AL4X4TAccfBeR34fy"
+    );
   }
 
+  
   return (
     <div id="contact" className="w-full lg:h-screen">
-      <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
-        <h2 className="p-10 tracking-widest text-teal-700 uppercase">
+      <div className="max-w-[750px] m-auto px-2 py-16 w-full">
+        <h2 className="p-10 tracking-widest uppercase animate-pulse">
           Contact
         </h2>
+        <hr/>
         <div className="grid gap-8 lg:grid-cols-5">
           {/* left */}
           <div className="w-full h-full col-span-3 p-4 shadow-xl lg:col-span-2 rounded-xl">
@@ -57,32 +44,32 @@ function Contact() {
                 />
               </div>
               <div>
-                <h2 className="text-teal-700 pt-7">Diala Abul-Khail</h2>
-                <h3 className="text-gray-400">Full Stack Developer</h3>
-                <p className="pt-3">
-                  I am available for freelance or full-time positions.
+       
+                <p className="pt-3 pl-2 tracking-widest text-center">
+                  Available for freelance or full-time positions.
                 </p>
               </div>
               <div>
                 <p className="pt-24 text-center uppercas">get in touch!</p>
 
                 <div className="flex items-center justify-between py-4 ">
-                  <div className="p-4 duration-200 ease-in rounded-full shadow-md cursor-pointer shadow-teal-200 hover:scale-125">
+                  <div className="p-3 duration-200 ease-in rounded-full shadow-md cursor-pointer shadow-white hover:scale-125">
                     <a href="https://www.linkedin.com/in/dialaabulkhail/">
                       <FaLinkedinIn />
                     </a>
                   </div>
-                  <div className="p-4 duration-200 ease-in rounded-full shadow-md cursor-pointer shadow-teal-200 hover:scale-125">
+                 
+                  <div className="p-3 duration-200 ease-in rounded-full shadow-md cursor-pointer shadow-white hover:scale-125">
                     <a href="https://github.com/dialaabulkhail">
                       <FaGithub />
                     </a>
                   </div>
-                  <div className="p-4 duration-200 ease-in rounded-full shadow-md cursor-pointer shadow-teal-200 hover:scale-125">
+                  <div className="p-3 duration-200 ease-in rounded-full shadow-md cursor-pointer shadow-white hover:scale-125">
                     <a href="mailto:diala.sh.98@gmail.com">
                       <AiOutlineMail />
                     </a>
                   </div>
-                  <div className="p-4 duration-200 ease-in rounded-full shadow-md cursor-pointer shadow-teal-200 hover:scale-125">
+                  <div className="p-3 duration-200 ease-in rounded-full shadow-md cursor-pointer shadow-white hover:scale-125">
                     <a href="https://dialabk.hashnode.dev/">
                       <BsFillPersonLinesFill />
                     </a>
@@ -95,19 +82,16 @@ function Contact() {
           {/* right */}
           <div className="w-full h-auto col-span-3 shadow-xl rounded-xl lg:p-4">
             <div className="p-4">
-              <form onSubmit={handleSubmit(onSubmitForm)}>
+              <form onSubmit={sendEmail}>
                 <div className="grid w-full gap-4 py-2 md:grid-cols-2">
                   <div className="flex flex-col">
                     <label className="py-2 text-sm uppercase">Name</label>
                     <input
-                      className="flex p-3 border-2 border-gray-200 rounded-lg caret-teal-200"
+                      className="flex p-1 text-gray-800 border-2 border-gray-200 rounded-lg"
                       type="text"
                       name="name"
-                      {...register("name", {
-                        required: {
-                          value: true,
-                        },
-                      })}
+                      required=""
+                 
                     />
                   </div>
 
@@ -116,14 +100,10 @@ function Contact() {
                       Phone Number
                     </label>
                     <input
-                      className="flex p-3 border-2 border-gray-200 rounded-lg caret-teal-200"
+                      className="flex p-1 text-gray-800 border-2 border-gray-200 rounded-lg"
                       type="text"
                       name="phone"
-                      {...register("phone", {
-                        required: {
-                          value: false,
-                        },
-                      })}
+                      required=""
                     />
                   </div>
                 </div>
@@ -131,47 +111,35 @@ function Contact() {
                 <div className="flex flex-col py-2">
                   <label className="py-2 text-sm uppercase">Email</label>
                   <input
-                    className="flex p-3 border-2 border-gray-200 rounded-lg caret-teal-200"
+                    className="flex p-1 text-gray-800 border-2 border-gray-200 rounded-lg"
                     type="email"
                     name="email"
-                    {...register("email", {
-                      required: {
-                        value: true,
-                      },
-                    })}
+                    required=""
                   />
                 </div>
 
                 <div className="flex flex-col py-2">
                   <label className="py-2 text-sm uppercase">Subject</label>
                   <input
-                    className="flex p-3 border-2 border-gray-200 rounded-lg caret-teal-200"
+                    className="flex p-1 text-gray-800 border-2 border-gray-200 rounded-lg"
                     type="text"
                     name="subject"
-                    {...register("subject", {
-                      required: {
-                        value: true,
-                      },
-                    })}
+                    required=""
                   />
-                  <span>{errors?.subject?.message}</span>
+
                 </div>
 
                 <div className="flex flex-col py-2">
                   <label className="py-2 text-sm uppercase">message</label>
                   <textarea
-                    className="p-3 border-2 border-gray-300 rounded-lg caret-teal-200"
-                    rows="10"
+                    className="p-3 text-gray-800 border-2 border-gray-300 rounded-lg "
+                    rows="5"
                     name="message"
-                    {...register("message", {
-                      required: {
-                        value: false,
-                      },
-                    })}
+                    required=""
                   ></textarea>
                 </div>
 
-                <button type="submit" className="w-full p-3 mt-4 bg-teal-400">
+                <button type="submit" className="w-full p-3 mt-4 text-gray-500 bg-white">
                   Send Message
                 </button>
               </form>
@@ -181,9 +149,9 @@ function Contact() {
 
         <div className="flex justify-center py-12">
           <Link href="/">
-            <div className="p-3 duration-200 ease-in rounded-full shadow-md cursor-pointer shadow-teal-200 hover:scale-110">
+            <div className="p-3 duration-200 ease-in rounded-full shadow-sm cursor-pointer shadow-white hover:scale-110">
               <HiOutlineChevronDoubleUp
-                className="m-auto text-teal-700"
+                className="m-auto text-gray-100"
                 size={30}
               />
             </div>
