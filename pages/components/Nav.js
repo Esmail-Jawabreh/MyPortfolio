@@ -103,7 +103,7 @@ function About() {
            
             <div
               onClick={handleNav}
-              className="p-2 duration-300 ease-in rounded-full shadow-md cursor-pointer shadow-teal-200 hover:scale-110"
+              className="p-2 duration-300 ease-in rounded-full shadow-sm cursor-pointer shadow-white hover:scale-110"
             >
               <AiOutlineClose />
             </div>
@@ -115,7 +115,7 @@ function About() {
               <Link href="/">
                 <li
                   onClick={() => setNav(false)}
-                  className="py-10 text-sm border-teal-200 hover:border-b"
+                  className="py-10 text-sm border-white hover:border-b"
                 >
                   Home
                 </li>
@@ -123,7 +123,7 @@ function About() {
               <Link href="/#about">
                 <li
                   onClick={() => setNav(false)}
-                  className="py-10 text-sm border-teal-200 hover:border-b"
+                  className="py-10 text-sm border-white hover:border-b"
                 >
                   About
                 </li>
@@ -131,7 +131,7 @@ function About() {
               <Link href="/#skills">
                 <li
                   onClick={() => setNav(false)}
-                  className="py-10 text-sm border-teal-200 hover:border-b"
+                  className="py-10 text-sm border-white hover:border-b"
                 >
                   Skills
                 </li>
@@ -139,7 +139,7 @@ function About() {
               <Link href="/#projects">
                 <li
                   onClick={() => setNav(false)}
-                  className="py-10 text-sm border-teal-200 hover:border-b"
+                  className="py-10 text-sm border-white hover:border-b"
                 >
                   Projects
                 </li>
@@ -147,7 +147,7 @@ function About() {
               <Link href="/#contact">
                 <li
                   onClick={() => setNav(false)}
-                  className="py-10 text-sm border-teal-200 hover:border-b"
+                  className="py-10 text-sm border-white hover:border-b"
                 >
                   Contact
                 </li>
