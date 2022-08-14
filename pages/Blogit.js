@@ -30,16 +30,16 @@ function Blogit() {
           </p>
         
          
-          <a href="https://github.com/dialaabulkhail/MyBlog">
+          <Link href="https://github.com/dialaabulkhail/MyBlog">
             <button className="px-8 py-2 mt-4 mr-8 text-gray-500 duration-150 ease-in-out hover:scale-105">
               Code
             </button>
-          </a>
-          <a href="https://blogit-cq2l3z7qm-dialaabulkhail.vercel.app/">
+          </Link>
+          <Link href="https://blogit-cq2l3z7qm-dialaabulkhail.vercel.app/">
             <button className="px-8 py-2 mt-4 text-gray-500 duration-150 ease-in-out hover:scale-105">
               Demo
             </button>
-          </a>
+          </Link>
 
           <Link href="/#projects">
           <p className="mt-10 underline cursor-pointer">Back To Projects</p>

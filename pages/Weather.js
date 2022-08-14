@@ -3,6 +3,7 @@ import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import weather from "../public/assets/projects/weather.png";
 
+
 function Weather() {
   return (
     <div className="w-full">
@@ -30,16 +31,16 @@ function Weather() {
           </p>
         
          
-          <a href="https://github.com/dialaabulkhail/WeatherAPI">
+          <Link href="https://github.com/dialaabulkhail/WeatherAPI">
             <button className="px-8 py-2 mt-4 mr-8 text-gray-500 duration-150 ease-in-out hover:scale-105">
               Code
             </button>
-          </a>
-          <a href="/Weather">
+          </Link>
+          <Link href="/Weather">
             <button className="px-8 py-2 mt-4 text-gray-500 duration-150 ease-in-out hover:scale-105">
               Demo
             </button>
-          </a>
+          </Link>
 
           <Link href="/#projects">
           <p className="mt-10 underline cursor-pointer">Back To Projects</p>
