@@ -25,7 +25,8 @@ function Blogit() {
         <div className="col-span-4">
           <h2 className="">Overview</h2>
           <p className="pt-4 pb-4">
-            Blogit is a web page that displays a collection of personal blogs, each blog card leads to a detailed page in which users can read the blog and share their reviews in the comments section.
+            Diala's Blog is a web page that hopefully will help new developers to start in many fields, the main page displays a collection of personal written blogs, or chosen articles that are related to software development, each of which helped me during my learning journey.. every blog card redirects you to a detailed page in which users can read the article and share their reviews in the comments section.
+          
           </p>
         
          
@@ -34,7 +35,7 @@ function Blogit() {
               Code
             </button>
           </a>
-          <a href="https://blogit-kd51ev6w5-dialaabulkhail.vercel.app/">
+          <a href="https://blogit-fuehh8ufj-dialaabulkhail.vercel.app/">
             <button className="px-8 py-2 mt-4 text-gray-500 duration-150 ease-in-out hover:scale-105">
               Demo
             </button>

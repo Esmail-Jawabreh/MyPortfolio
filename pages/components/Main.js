@@ -8,7 +8,7 @@ function Main() {
       <div className="max-w-[750px] w-full h-full m-auto p-2 flex justify-center items-center ">
         <div>
           <h1 >
-            Hi, I'm Diala
+            Hi, I'm Diala Abul-khail...
             .
           </h1>
           <div >
