@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
-import todo from "../public/assets/projects/todos.png";
+import weather from "../public/assets/projects/weather.png";
 
-function Todo() {
+function Weather() {
   return (
     <div className="w-full">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
@@ -12,11 +12,11 @@ function Todo() {
             className="absolute z-1"
             layout="fill"
             objectFit="cover"
-            src={todo}
+            src={weather}
             alt="/"
           />
           <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-            <h2 className="py-2 pl-2 bg-gray-800/70">To do Web App</h2>
+            <h2 className="py-2 pl-2 bg-gray-800/70">Weather App</h2>
           </div>
         </div>
       </div>
@@ -25,16 +25,17 @@ function Todo() {
         <div className="col-span-4">
           <h2 className="">Overview</h2>
           <p className="pt-4 pb-4">
-           Todo web app is an CRUD application that allows you to have your private profile of which you can create new tasks at, check those tasks and delete or edit them.
-           </p>
+           Weather app is a webpage that allows users to see the weather of any city in details. 
+      
+          </p>
         
          
-          <a href="https://github.com/dialaabulkhail/Todo">
+          <a href="https://github.com/dialaabulkhail/WeatherAPI">
             <button className="px-8 py-2 mt-4 mr-8 text-gray-500 duration-150 ease-in-out hover:scale-105">
               Code
             </button>
           </a>
-          <a href="https://todolistbydiala.herokuapp.com/login/">
+          <a href="/Weather">
             <button className="px-8 py-2 mt-4 text-gray-500 duration-150 ease-in-out hover:scale-105">
               Demo
             </button>
@@ -48,25 +49,25 @@ function Todo() {
           <div className="p-2">
             <p className="pb-2 font-bold text-center">Technologies Used</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
-            <p className="flex items-center py-2">
+              <p className="flex items-center py-2">
                 <RiRadioButtonFill className="pr-1" />
-                Python
+                Javascript
               </p>
               <p className="flex items-center py-2">
                 <RiRadioButtonFill className="pr-1" />
-                Django
+                Next.js
               </p>
               <p className="flex items-center py-2">
                 <RiRadioButtonFill className="pr-1" />
-                CSS
+                Tailwind CSS
               </p>
               <p className="flex items-center py-2">
                 <RiRadioButtonFill className="pr-1" />
-                Django templating language
+                WeatherAPI
               </p>
               <p className="flex items-center py-2">
                 <RiRadioButtonFill className="pr-1" />
-                Heroku
+                Vercel
               </p>
             </div>
           </div>
@@ -77,4 +78,4 @@ function Todo() {
   );
 }
 
-export default Todo;
+export default Weather;

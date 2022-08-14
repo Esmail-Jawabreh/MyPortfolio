@@ -3,12 +3,16 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 html {
   scroll-behavior: smooth;
 }
 @layer base {
   body {
     @apply bg-slate-800 text-white tracking-wide
+
+
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -16,7 +20,7 @@ html {
   }
 
   h1 {
-    @apply text-4xl sm:text-5xl md:text-6xl
+    @apply text-2xl sm:text-5xl md:text-6xl
   }
 
   h2 {
