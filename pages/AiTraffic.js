@@ -25,12 +25,12 @@ function AiTraffic() {
             to generate a custom green time for each traffic light depending on the traffic flow for each 
             hour of the day in order to help people save time, and avoid traffic congestions as possible.
             </p>
-            <a href="https://github.com/dialaabulkhail/AI_Traffic_system">
+            <Link href="https://github.com/dialaabulkhail/AI_Traffic_system">
             <button className="px-8 py-2 mt-4 mr-8 text-gray-500 duration-150 ease-in-out hover:scale-105">Code</button>
-            </a>
-            <a href="https://dialabk.hashnode.dev/ai-traffic-system-with-python">
+            </Link>
+            <Link href="https://dialabk.hashnode.dev/ai-traffic-system-with-python">
             <button className="px-8 py-2 mt-4 text-gray-500 duration-150 ease-in-out hover:scale-105">Demo</button>
-            </a>
+            </Link>
         </div>
         <div className="col-span-4 p-4 shadow-xl md:col-span-1 rounded-xl">
             <div className="p-2">

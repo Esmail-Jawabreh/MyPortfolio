@@ -22,9 +22,9 @@ function Movies() {
             <p>
             Netflix Clone is a webpage that has API movies data, you can add your comments to each movie, and you can also add it to your favorite list.
             </p>
-            <a href="https://github.com/dialaabulkhail/Netflix-Clone/tree/main/netflix">
+            <Link href="https://github.com/dialaabulkhail/Netflix-Clone/tree/main/netflix">
             <button className="px-8 py-2 mt-4 mr-8">Code</button>
-            </a>
+            </Link>
         </div>
         <div className="col-span-4 p-4 shadow-xl md:col-span-1 rounded-xl">
             <div className="p-2">

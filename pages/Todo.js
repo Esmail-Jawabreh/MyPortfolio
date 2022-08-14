@@ -16,7 +16,7 @@ function Todo() {
             alt="/"
           />
           <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-            <h2 className="py-2 pl-2 bg-gray-800/70">TUTORium Web App</h2>
+            <h2 className="py-2 pl-2 bg-gray-800/70">To do Web App</h2>
           </div>
         </div>
       </div>
@@ -29,16 +29,16 @@ function Todo() {
            </p>
         
          
-          <a href="https://github.com/dialaabulkhail/Todo">
+          <Link href="https://github.com/dialaabulkhail/Todo">
             <button className="px-8 py-2 mt-4 mr-8 text-gray-500 duration-150 ease-in-out hover:scale-105">
               Code
             </button>
-          </a>
-          <a href="https://todolistbydiala.herokuapp.com/login/">
+          </Link>
+          <Link href="https://todolistbydiala.herokuapp.com/login/">
             <button className="px-8 py-2 mt-4 text-gray-500 duration-150 ease-in-out hover:scale-105">
               Demo
             </button>
-          </a>
+          </Link>
 
           <Link href="/#projects">
           <p className="mt-10 underline cursor-pointer">Back To Projects</p>

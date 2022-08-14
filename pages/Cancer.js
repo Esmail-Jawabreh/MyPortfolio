@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
-import blog from "../public/assets/projects/blog.png";
+import weather from "../public/assets/projects/canser.png";
 
-function Blogit() {
+function Cancer() {
   return (
     <div className="w-full">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
@@ -12,11 +12,11 @@ function Blogit() {
             className="absolute z-1"
             layout="fill"
             objectFit="cover"
-            src={blog}
+            src={weather}
             alt="/"
           />
           <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-            <h2 className="py-2 pl-2 bg-gray-800/70">Diala's blog webpage</h2>
+            <h2 className="py-2 pl-2 bg-gray-800/70">AI Cancer Tumor</h2>
           </div>
         </div>
       </div>
@@ -25,17 +25,17 @@ function Blogit() {
         <div className="col-span-4">
           <h2 className="">Overview</h2>
           <p className="pt-4 pb-4">
-            Diala's Blog is a web page that hopefully will help new developers to start in many fields, the main page displays a collection of personal written blogs, or chosen articles that are related to software development, each of which helped me during my learning journey.. every blog card redirects you to a detailed page in which users can read the article and share their reviews in the comments section.
-          
+          AI indicator prediction model to accurately Diagnose Cancer Tumor based on a sample of data.
+      
           </p>
         
          
-          <Link href="https://github.com/dialaabulkhail/MyBlog">
+          <Link href="https://github.com/dialaabulkhail/AI-Cancer-prediction/blob/main/AI_Cancer.ipynb">
             <button className="px-8 py-2 mt-4 mr-8 text-gray-500 duration-150 ease-in-out hover:scale-105">
               Code
             </button>
           </Link>
-          <Link href="https://blogit-cq2l3z7qm-dialaabulkhail.vercel.app/">
+          <Link href="https://github.com/dialaabulkhail/AI-Cancer-prediction/blob/main/AI_Cancer.ipynb">
             <button className="px-8 py-2 mt-4 text-gray-500 duration-150 ease-in-out hover:scale-105">
               Demo
             </button>
@@ -51,27 +51,23 @@ function Blogit() {
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="flex items-center py-2">
                 <RiRadioButtonFill className="pr-1" />
-                TypeScript
+                Google Colaboratory
               </p>
               <p className="flex items-center py-2">
                 <RiRadioButtonFill className="pr-1" />
-                Sanity CMS
+                Python
               </p>
               <p className="flex items-center py-2">
                 <RiRadioButtonFill className="pr-1" />
-                React
+                CSV data
               </p>
               <p className="flex items-center py-2">
                 <RiRadioButtonFill className="pr-1" />
-                Tailwind CSS
+                Pandas
               </p>
               <p className="flex items-center py-2">
                 <RiRadioButtonFill className="pr-1" />
-                ISR
-              </p>
-              <p className="flex items-center py-2">
-                <RiRadioButtonFill className="pr-1" />
-                Vercel
+                Tensorflow's keras
               </p>
             </div>
           </div>
@@ -82,4 +78,4 @@ function Blogit() {
   );
 }
 
-export default Blogit;
+export default Cancer;

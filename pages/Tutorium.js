@@ -35,16 +35,16 @@ function Tutorium() {
           <li>Students can search for the courses they
             want in each category.</li>
          
-          <a href="https://github.com/dialaabulkhail/TUTORium">
+          <Link href="https://github.com/dialaabulkhail/TUTORium">
             <button className="px-8 py-2 mt-4 mr-8 text-gray-500 duration-150 ease-in-out hover:scale-105">
               Code
             </button>
-          </a>
-          <a href="http://localhost:3001/Home">
+          </Link>
+          <Link href="http://localhost:3001/Home">
             <button className="px-8 py-2 mt-4 text-gray-500 duration-150 ease-in-out hover:scale-105">
               Demo
             </button>
-          </a>
+          </Link>
 
           <Link href="/#projects">
           <p className="mt-10 underline cursor-pointer">Back To Projects</p>
