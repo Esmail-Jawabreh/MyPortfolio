@@ -55,7 +55,7 @@ function Projects() {
               <h3 className="text-2xl tracking-wider text-center">
                 TUTORium Webapp
               </h3>
-              <p className="pt-2 pb-4 text-center">Django-React</p>
+              <p className="pt-2 pb-4 text-center">Django-Next.js</p>
               <Link href="/Tutorium">
                 <p className="py-2 text-lg font-bold text-center text-white bg-gray-500 rounded-lg cursor-pointer">
                   More
@@ -77,7 +77,7 @@ function Projects() {
             />
             <div className="text-gray-500 hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] ">
               <h3 className="text-2xl tracking-wider text-center">
-                Blogit Webpage
+                Diala's Blog Webpage
               </h3>
               <p className="pt-2 pb-4 text-center">Sanity-Next.JS</p>
               <Link href="/Blogit">
