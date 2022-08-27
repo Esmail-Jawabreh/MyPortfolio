@@ -8,6 +8,7 @@ import tutorium from "../../public/assets/projects/tutorium.png";
 import blogit from "../../public/assets/projects/blogit.png";
 import todo from "../../public/assets/projects/todo.png";
 import weather from "../../public/assets/projects/weather.png";
+import dashboard from "../../public/assets/projects/dashboard.png";
 
 
 
@@ -22,6 +23,30 @@ function Projects() {
         <div className="grid gap-8 md:grid-cols-2">
 
 
+
+{/* project */}
+<div className="relative flex items-center justify-center w-full h-auto mt-3 shadow-xl rounded-xl group hover:animate-pulse hover:bg-gradient-to-r from-white to-gray-100">
+            <Image
+              className="group-hover:opacity-10 rounded-xl"
+              src={dashboard}
+              width="400"
+              height="250"
+              alt="/"
+            />
+            <div className="text-gray-500 hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] ">
+              <h3 className="text-2xl tracking-wider text-center">
+                Dashboard
+              </h3>
+              <p className="pt-2 pb-4 text-center">React.JS</p>
+              <Link href="/Dashboard">
+                <p className="py-2 text-lg font-bold text-center text-white bg-gray-500 rounded-lg cursor-pointer">
+                  More
+                </p>
+              </Link>
+            </div>
+          </div>
+
+          
 {/* project */}
           <div className="relative flex items-center justify-center w-full h-auto mt-3 shadow-xl rounded-xl group hover:animate-pulse hover:bg-gradient-to-r from-white to-gray-100">
             <Image
