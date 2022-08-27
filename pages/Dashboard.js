@@ -36,7 +36,7 @@ const Dashboard = () => {
             Code
           </button>
         </Link>
-        <Link href="https://diala-dashboard.netlify.app/Calendar">
+        <Link href="https://diala-dashboard.netlify.app/">
           <button className="px-8 py-2 mt-4 text-gray-500 duration-150 ease-in-out hover:scale-105">
             Demo
           </button>
