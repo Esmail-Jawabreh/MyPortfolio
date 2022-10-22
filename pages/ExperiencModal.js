@@ -8,22 +8,22 @@ const ExperiencModal = ({ showModal, setShowModal }) => {
       {showModal && (
         <div
           id="defaultModal"
-          class="relative overflow-y-auto overflow-x-hidden z-50 w-full h-modal md:h-full justify-center items-center"
+          className="relative overflow-y-auto overflow-x-hidden z-50 w-full h-modal md:h-full justify-center items-center"
         >
-          <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+          <div className="relative p-4 w-full max-w-2xl h-full md:h-auto">
             {/* <!-- Modal content --> */}
-            <div class="relative bg-white  shadow ">
+            <div className="relative bg-white  shadow ">
               {/* <!-- Modal header --> */}
-              <div class="flex justify-between items-start p-2 border-b ">
-                <h3 class="text-lg text-gray-500 ">Front-end Deveoper</h3>
+              <div className="flex justify-between items-start p-2 border-b ">
+                <h3 className="text-lg text-gray-500 ">Front-end Deveoper</h3>
                 <button
                   onClick={() => setShowModal(false)}
                   type="button"
-                  class=" bg-transparent text-sm p-1.5 ml-auto inline-flex items-center "
+                  className=" bg-transparent text-sm p-1.5 ml-auto inline-flex items-center "
                   data-modal-toggle="defaultModal"
                 >
                   <svg
-                    class="w-5 h-5"
+                    className="w-5 h-5"
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -37,17 +37,17 @@ const ExperiencModal = ({ showModal, setShowModal }) => {
                 </button>
               </div>
               {/* <!-- Modal body --> */}
-              <div class="px-2 pb-4">
-                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+              <div className="px-2 pb-4">
+                <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
                   Two months internship at Desaisiv startup company for
                   healthTech solutions (Aug.2022 - Oct.2022)
                 </p>
               </div>
-              <div class="flex justify-between items-start p-2 border-b ">
-                <h3 class="text-lg text-gray-500 ">Junior Software Deveoper</h3>
+              <div className="flex justify-between items-start p-2 border-b ">
+                <h3 className="text-lg text-gray-500 ">Junior Software Deveoper</h3>
               </div>
-              <div class="px-2 pb-4">
-                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400 ">
+              <div className="px-2 pb-4">
+                <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400 ">
                   At eSmart software company for ERP (Oct.2022)
                 </p>
               </div>
