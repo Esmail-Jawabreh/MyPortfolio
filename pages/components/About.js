@@ -31,8 +31,6 @@ function About() {
             willigness towards accepting any challenge that can enhance my
             knowledge in this field.
           </p>
-
-          {/* <h4 className="py-3 text-xl ">Experience</h4> */}
           <button
             className="p-3 border bg-transparent mt-3 text-center"
             onClick={() => setShowModal(true)
@@ -41,12 +39,6 @@ function About() {
           >
             Experience
           </button>
-
-          {/* <p className="font-bold">-Front-end Developer</p>
-          <p>
-            Two months internship at Desaisiv startup company for healthTech
-            solutions (Aug.2022 - Oct.2022)
-          </p> */}
           {showModal && <ExperiencModal setShowModal={setShowModal} showModal={showModal}/>}
         </div>
         <div className="pt-[50px] md:pt-[150px]">
