@@ -4,7 +4,6 @@ import { useState } from "react";
 const ExperiencModal = ({ showModal, setShowModal }) => {
   return (
     <>
-      {/* <!-- Main modal --> */}
       {showModal && (
         <div
           id="defaultModal"
