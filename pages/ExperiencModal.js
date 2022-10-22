@@ -10,7 +10,7 @@ const ExperiencModal = ({ showModal, setShowModal }) => {
           className="relative overflow-y-auto overflow-x-hidden z-50 w-full h-modal md:h-full justify-center items-center"
         >
           <div className="relative p-4 w-full max-w-2xl h-full md:h-auto">
-            {/* <!-- Modal content --> */}
+
             <div className="relative bg-white  shadow ">
               {/* <!-- Modal header --> */}
               <div className="flex justify-between items-start p-2 border-b ">
