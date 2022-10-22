@@ -10,7 +10,7 @@ html {
 }
 @layer base {
   body {
-    @apply bg-slate-800 text-white tracking-wide
+    @apply bg-[#565656] text-white tracking-wide
 
 
   }
@@ -32,23 +32,23 @@ html {
   }  
 
   button {
-    @apply shadow-sm shadow-white rounded-full uppercase bg-white text-black
+    @apply  uppercase bg-transparent border hover:bg-white hover:text-[#b78e95] 
   }
 
-  .will-change-transform {
+ .will-change-transform {
     will-change: transform;
   }
 
-  .cursor::after {
+ .cursor::after {
     display: block;
     content: '';
     position: absolute;
     width: 4px;
     height: 100%;
-    background-color: #fff;
+    background-color: #b78e95;
     animation: cursor 0.6s linear infinite alternate;
     will-change: opacity;
-  }
+  } 
 
   @keyframes cursor {
     0%,
