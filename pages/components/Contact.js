@@ -33,13 +33,13 @@ import Router from 'next/router'
         <hr/>
         <div className="grid gap-8 lg:grid-cols-5">
           {/* left */}
-          <div className="w-full h-full col-span-3 p-4 shadow-xl lg:col-span-2 rounded-xl">
+          <div className="w-full h-full col-span-3 p-4 shadow-xl lg:col-span-2 border mt-3">
             <div className="h-full lg:p-4">
               <div>
                 <Image
                   width={500}
                   height={300}
-                  className="rounded-xl"
+                  className="rounded-sm"
                   src="https://img.freepik.com/free-vector/happy-women-sitting-talking-each-other-dialog-psychologist-tablet-flat-illustration_74855-14078.jpg?t=st=1655518257~exp=1655518857~hmac=a0300273195172e7cf2174814efede3112d07709efde352d507adddd596f4c05&w=740"
                 />
               </div>
@@ -80,14 +80,14 @@ import Router from 'next/router'
           </div>
 
           {/* right */}
-          <div className="w-full h-auto col-span-3 shadow-xl rounded-xl lg:p-4">
+          <div className="w-full h-full col-span-3 lg:p-4 border-l mt-3">
             <div className="p-4">
               <form onSubmit={sendEmail}>
                 <div className="grid w-full gap-4 py-2 md:grid-cols-2">
                   <div className="flex flex-col">
                     <label className="py-2 text-sm uppercase">Name</label>
                     <input
-                      className="flex p-1 text-gray-800 border-2 border-gray-200 rounded-lg"
+                      className="flex p-1 text-gray-800 text-[#b78e95] focus:outline-none "
                       type="text"
                       name="name"
                       required=""
@@ -97,10 +97,10 @@ import Router from 'next/router'
 
                   <div className="flex flex-col">
                     <label className="py-2 text-sm uppercase">
-                      Phone Number
+                      Phone
                     </label>
                     <input
-                      className="flex p-1 text-gray-800 border-2 border-gray-200 rounded-lg"
+                      className="flex p-1 text-gray-800 text-[#b78e95] focus:outline-none "
                       type="text"
                       name="phone"
                       required=""
@@ -111,7 +111,7 @@ import Router from 'next/router'
                 <div className="flex flex-col py-2">
                   <label className="py-2 text-sm uppercase">Email</label>
                   <input
-                    className="flex p-1 text-gray-800 border-2 border-gray-200 rounded-lg"
+                    className="flex p-1 text-gray-800 text-[#b78e95] focus:outline-none "
                     type="email"
                     name="email"
                     required=""
@@ -121,7 +121,7 @@ import Router from 'next/router'
                 <div className="flex flex-col py-2">
                   <label className="py-2 text-sm uppercase">Subject</label>
                   <input
-                    className="flex p-1 text-gray-800 border-2 border-gray-200 rounded-lg"
+                    className="flex p-1 text-gray-800 text-[#b78e95] focus:outline-none "
                     type="text"
                     name="subject"
                     required=""
@@ -132,14 +132,14 @@ import Router from 'next/router'
                 <div className="flex flex-col py-2">
                   <label className="py-2 text-sm uppercase">message</label>
                   <textarea
-                    className="p-3 text-gray-800 border-2 border-gray-300 rounded-lg "
+                    className="p-3  text-gray-800 text-[#b78e95] focus:outline-none "
                     rows="5"
                     name="message"
                     required=""
                   ></textarea>
                 </div>
 
-                <button type="submit" className="w-full p-3 mt-4 text-gray-500 bg-white">
+                <button type="submit" className="w-full p-3 mt-4 ease-in-out duration-150 bg-transparent border">
                   Send Message
                 </button>
               </form>
@@ -147,9 +147,9 @@ import Router from 'next/router'
           </div>
         </div>
 
-        <div className="flex justify-center py-12">
+        <div className="flex justify-center mt-8">
           <Link href="/">
-            <div className="p-3 duration-200 ease-in rounded-full shadow-sm cursor-pointer shadow-white hover:scale-110">
+            <div className="p-3 duration-200 ease-in cursor-pointer  hover:scale-110 mt-10">
               <HiOutlineChevronDoubleUp
                 className="m-auto text-gray-100"
                 size={30}

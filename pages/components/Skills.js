@@ -16,6 +16,7 @@ function Skills() {
                   src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png"
                   width="40px"
                   height="40px"
+                  alt="/"
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -31,6 +32,8 @@ function Skills() {
                   src="https://github.com/fireclint/portfolio-nextjs/blob/main/public/assets/skills/css.png?raw=true"
                   width="40px"
                   height="40px"
+                  alt="/"
+
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -46,6 +49,7 @@ function Skills() {
                   src="https://github.com/fireclint/portfolio-nextjs/blob/main/public/assets/skills/html.png?raw=true"
                   width="40px"
                   height="40px"
+                  alt="/"
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -61,6 +65,7 @@ function Skills() {
                   src="https://github.com/fireclint/portfolio-nextjs/blob/main/public/assets/skills/javascript.png?raw=true"
                   width="40px"
                   height="40px"
+                  alt="/"
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -76,6 +81,7 @@ function Skills() {
                   src="https://github.com/fireclint/portfolio-nextjs/blob/main/public/assets/skills/github1.png?raw=true"
                   width="40px"
                   height="40px"
+                  alt="/"
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -91,6 +97,7 @@ function Skills() {
                   src="https://github.com/fireclint/portfolio-nextjs/blob/main/public/assets/skills/node.png?raw=true"
                   width="40px"
                   height="40px"
+                  alt="/"
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -107,6 +114,7 @@ function Skills() {
                   https://iconape.com/wp-content/files/gm/82643/svg/next-js.svg"
                   width="40px"
                   height="40px"
+                  alt="/"
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -122,6 +130,7 @@ function Skills() {
                   src="https://github.com/fireclint/portfolio-nextjs/blob/main/public/assets/skills/react.png?raw=true"
                   width="40px"
                   height="40px"
+                  alt="/"
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -137,6 +146,7 @@ function Skills() {
                   src="https://img.icons8.com/external-tal-revivo-light-tal-revivo/344/external-django-a-high-level-python-web-framework-that-encourages-rapid-development-logo-light-tal-revivo.png"
                   width="50px"
                   height="50px"
+                  alt="/"
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -152,6 +162,7 @@ function Skills() {
                   src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png"
                   width="40px"
                   height="40px"
+                  alt="/"
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -167,6 +178,7 @@ function Skills() {
                   src="https://img.icons8.com/color/480/tensorflow.png"
                   width="40px"
                   height="40px"
+                  alt="/"
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -182,6 +194,7 @@ function Skills() {
                   src="https://github.com/fireclint/portfolio-nextjs/blob/main/public/assets/skills/tailwind.png?raw=true"
                   width="40px"
                   height="40px"
+                  alt="/"
                 />
               </div>
               <div className="flex flex-col items-center justify-center">

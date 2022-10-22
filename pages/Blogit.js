@@ -16,7 +16,7 @@ function Blogit() {
             alt="/"
           />
           <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-            <h2 className="py-2 pl-2 bg-gray-800/70">Diala's blog webpage</h2>
+            <h2 className="py-2 pl-2 bg-[#565656]/70">Diala's blog webpage</h2>
           </div>
         </div>
       </div>
@@ -31,12 +31,12 @@ function Blogit() {
         
          
           <Link href="https://github.com/dialaabulkhail/MyBlog">
-            <button className="px-8 py-2 mt-4 mr-8 text-gray-500 duration-150 ease-in-out hover:scale-105">
+            <button className="px-8 py-2 mt-4 mr-8  duration-150 ease-in-out ">
               Code
             </button>
           </Link>
           <Link href="https://blogit-cq2l3z7qm-dialaabulkhail.vercel.app/">
-            <button className="px-8 py-2 mt-4 text-gray-500 duration-150 ease-in-out hover:scale-105">
+            <button className="px-8 py-2 mt-4  duration-150 ease-in-out ">
               Demo
             </button>
           </Link>
@@ -45,7 +45,7 @@ function Blogit() {
           <p className="mt-10 underline cursor-pointer">Back To Projects</p>
         </Link>
         </div>
-        <div className="col-span-4 p-4 shadow-xl md:col-span-1 rounded-xl">
+        <div className="col-span-4 p-4 shadow-md md:col-span-1 bg-white/10 border ">
           <div className="p-2">
             <p className="pb-2 font-bold text-center">Technologies Used</p>
             <div className="grid grid-cols-3 md:grid-cols-1">

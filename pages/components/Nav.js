@@ -11,16 +11,17 @@ function About() {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState("#ecf0f3");
-  const [linkColor, setLinkColor] = useState("#1f2937");
+  const [linkColor, setLinkColor] = useState("#565656");
   const router = useRouter();
-
+  // bg: #565656
+  // light: #b78e95
   useEffect(() => {
     if (router.asPath === "/Movies" || router.asPath === "/AiTraffic") {
-      setNavBg("#1f2937");
+      setNavBg("#565656");
       setLinkColor("#ecf0f3");
     } else {
-      setNavBg("#1F2937");
-      setLinkColor("#1f2937");
+      setNavBg("#565656");
+      setLinkColor("#565656");
     }
   }, [router]);
 
@@ -92,18 +93,18 @@ function About() {
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[30%] h-screen bg-gray-800 p-5 ease-in duration-500"
+              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[30%] h-screen bg-white p-5 ease-in duration-500"
               : "fixed left-[-100%] top-0 p-5 ease-in duration-500"
           }
         >
           <div className="flex items-center justify-between w-full">
            
             {/* <Image src={logo} width="200" height="100" alt="logo" color="white"/> */}
-        <h3 className="text-xl">DIALA ABUL.KHAIL</h3>
+        <h3 className="text-xl text-[#565656]">DIALA ABUL.KHAIL</h3>
            
             <div
               onClick={handleNav}
-              className="p-2 duration-300 ease-in rounded-full shadow-sm cursor-pointer shadow-white hover:scale-110"
+              className="p-2 duration-300 ease-in rounded-full shadow-sm cursor-pointer shadow-white hover:scale-110 text-[#565656]"
             >
               <AiOutlineClose />
             </div>
@@ -111,11 +112,11 @@ function About() {
 
           <div className="flex flex-col py-10">
             <hr></hr>
-            <ul className="uppercase">
+            <ul className="uppercase text-[#565656]">
               <Link href="/">
                 <li
                   onClick={() => setNav(false)}
-                  className="py-10 text-sm border-white hover:border-b"
+                  className="py-10 text-sm  hover:border-b text-[#565656]"
                 >
                   Home
                 </li>
@@ -123,7 +124,7 @@ function About() {
               <Link href="/#about">
                 <li
                   onClick={() => setNav(false)}
-                  className="py-10 text-sm border-white hover:border-b"
+                  className="py-10 text-sm  hover:border-b text-[#565656]"
                 >
                   About
                 </li>
@@ -131,7 +132,7 @@ function About() {
               <Link href="/#skills">
                 <li
                   onClick={() => setNav(false)}
-                  className="py-10 text-sm border-white hover:border-b"
+                  className="py-10 text-sm  hover:border-b text-[#565656]"
                 >
                   Skills
                 </li>
@@ -139,7 +140,7 @@ function About() {
               <Link href="/#projects">
                 <li
                   onClick={() => setNav(false)}
-                  className="py-10 text-sm border-white hover:border-b"
+                  className="py-10 text-sm  hover:border-b text-[#565656]"
                 >
                   Projects
                 </li>
@@ -147,7 +148,7 @@ function About() {
               <Link href="/#contact">
                 <li
                   onClick={() => setNav(false)}
-                  className="py-10 text-sm border-white hover:border-b"
+                  className="py-10 text-sm  hover:border-b text-[#565656]"
                 >
                   Contact
                 </li>
