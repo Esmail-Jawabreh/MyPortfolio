@@ -36,7 +36,7 @@ function Weather() {
               Code
             </button>
           </Link>
-          <Link href="/Weather">
+          <Link href="https://weather-api-gold-beta.vercel.app/">
             <button className="px-8 py-2 mt-4  duration-150 ease-in-out ">
               Demo
             </button>

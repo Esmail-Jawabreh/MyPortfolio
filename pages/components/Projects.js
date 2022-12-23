@@ -9,6 +9,7 @@ import blogit from "../../public/assets/projects/blogit.png";
 import todo from "../../public/assets/projects/todo.png";
 import weather from "../../public/assets/projects/weather.png";
 import dashboard from "../../public/assets/projects/dashboard.png";
+import hills from '../../public/assets/projects/Hills.png'
 
 
 
@@ -21,6 +22,52 @@ function Projects() {
         </h2>
         <hr />
         <div className="grid gap-8 md:grid-cols-2">
+
+
+{/* project */}
+<div className="relative flex items-center justify-center w-full h-auto mt-3 shadow-xl  group  hover:bg-white/40 text-white ease-in-out duration-300">
+            <Image
+              className="group-hover:opacity-10 "
+              src={hills}
+              width="400"
+              height="250"
+              alt="/"
+            />
+            <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] ease-in-out duration-300">
+              <h3 className="text-2xl tracking-wider text-center">
+                7Hills Magazine
+              </h3>
+              <p className="pt-2 pb-4 text-center">Next.js-Strapi-PWA</p>
+              <Link href="/Hills">
+                <p className="py-2 text-lg  text-center bg-transparent border cursor-pointer hover:bg-white hover:text-[#565656] ease-in-out duration-150">
+                  More
+                </p>
+              </Link>
+            </div>
+          </div>
+
+
+{/* project */}
+<div className="relative flex items-center justify-center w-full h-auto mt-3 shadow-xl  group  hover:bg-white/40 text-white ease-in-out duration-300">
+            <Image
+              className="group-hover:opacity-10 "
+              src={dashboard}
+              width="400"
+              height="250"
+              alt="/"
+            />
+            <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] ease-in-out duration-300">
+              <h3 className="text-2xl tracking-wider text-center">
+                Dashboard
+              </h3>
+              <p className="pt-2 pb-4 text-center">React.JS</p>
+              <Link href="/Dashboard">
+                <p className="py-2 text-lg  text-center bg-transparent border cursor-pointer hover:bg-white hover:text-[#565656] ease-in-out duration-150">
+                  More
+                </p>
+              </Link>
+            </div>
+          </div>
 
 
 
