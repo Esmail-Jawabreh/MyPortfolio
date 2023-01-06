@@ -32,12 +32,12 @@ const Hills = () => {
         </p>
       
        
-        <Link href="https://github.com/dialaabulkhail/7Hills.JO">
+        <Link href="https://github.com/dialaabulkhail/7Hillsjo">
           <button className="px-8 py-2 mt-4 mr-8  duration-150 ease-in-out ">
             Code
           </button>
         </Link>
-        <Link href="https://7hillsjo.com/">
+        <Link href="https://7-hillsjo.vercel.app/">
           <button className="px-8 py-2 mt-4  duration-150 ease-in-out ">
             Demo
           </button>
