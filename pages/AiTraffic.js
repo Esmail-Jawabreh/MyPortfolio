@@ -2,6 +2,7 @@ import Image from "next/image"
 import traffic from '../public/assets/projects/traffic.gif'
 import {RiRadioButtonFill} from 'react-icons/ri'
 import Link from "next/link";
+import {BsArrowLeftCircle} from 'react-icons/bs'
 
 function AiTraffic() {
   return (
@@ -44,9 +45,11 @@ function AiTraffic() {
                 </div>
             </div>
         </div>
+        <div className="mt-10 ">
         <Link href='/#projects'>
-            <p className='underline cursor-pointer'>Back To Projects</p>
-        </Link>
+       <BsArrowLeftCircle size={30} className="hover:text-white/20 cursor-pointer ease-in-out duration-150"/>
+               </Link>
+       </div>
     </div>
 
 </div>

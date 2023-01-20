@@ -1,6 +1,7 @@
 import Image from "next/image";
 import movies from "../public/assets/projects/movies.png";
 import { RiRadioButtonFill } from "react-icons/ri";
+import { BsArrowLeftCircle } from 'react-icons/bs'
 import Link from "next/link";
 
 function Movies() {
@@ -53,9 +54,11 @@ function Movies() {
             </div>
           </div>
         </div>
+          <div className="mt-10 ">
         <Link href="/#projects">
-          <p className="underline cursor-pointer">Back</p>
-        </Link>
+            <BsArrowLeftCircle size={30} className="hover:text-white/20 cursor-pointer ease-in-out duration-150" />
+                  </Link>
+          </div>
       </div>
     </div>
   );

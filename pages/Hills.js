@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
+import {BsArrowLeftCircle} from 'react-icons/bs'
 import hills from "../public/assets/projects/Hills.png";
 
 const Hills = () => {
@@ -43,9 +44,11 @@ const Hills = () => {
           </button>
         </Link>
 
+        <div className="mt-10 ">
         <Link href="/#projects">
-        <p className="mt-10 underline cursor-pointer">Back To Projects</p>
-      </Link>
+       <BsArrowLeftCircle size={30} className="hover:text-white/20 cursor-pointer ease-in-out duration-150"/>
+             </Link>
+       </div>
       </div>
       <div className="col-span-4 p-4 shadow-md md:col-span-1  border bg-white/10">
         <div className="p-2">
