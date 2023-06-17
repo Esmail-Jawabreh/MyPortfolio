@@ -50,8 +50,7 @@ function About() {
       }
     >
       <div className="flex items-center justify-between w-full h-full px-10 2xl:px-16">
-        {/* <Image src={logo} alt="logo" width="200" height="100" /> */}
-        <h3 className="text-xl animate-pulse">DIALA ABUL.KHAIL</h3>
+        <h3 className="text-xl animate-pulse">Ismail Aljawabrah</h3>
 
         <div>
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
@@ -99,8 +98,7 @@ function About() {
         >
           <div className="flex items-center justify-between w-full">
            
-            {/* <Image src={logo} width="200" height="100" alt="logo" color="white"/> */}
-        <h3 className="text-xl text-[#565656]">DIALA ABUL.KHAIL</h3>
+        <h3 className="text-xl text-[#565656]">Ismail Aljawabrah</h3>
            
             <div
               onClick={handleNav}
@@ -154,33 +152,6 @@ function About() {
                 </li>
               </Link>
             </ul>
-            {/* <div >
-              <p className="py-5 tracking-widest text-teal-600 uppercase">
-                Let's Connect!
-              </p> */}
-              {/* <div className="flex items-center justify-between my-full w-full sm:w-[80%]">
-                <div className="p-3 duration-200 ease-in rounded-full shadow-md cursor-pointer shadow-teal-200 hover:scale-110">
-                  <a href="https://www.linkedin.com/in/dialaabulkhail/">
-                    <FaLinkedinIn />
-                  </a>
-                </div>
-                <div className="p-3 duration-200 ease-in rounded-full shadow-md cursor-pointer shadow-teal-200 hover:scale-110">
-                  <a href="https://github.com/dialaabulkhail">
-                    <FaGithub />
-                  </a>
-                </div>
-                <div className="p-3 duration-200 ease-in rounded-full shadow-md cursor-pointer shadow-teal-200 hover:scale-110">
-                  <a href="mailto:diala.sh.98@gmail.com">
-                    <AiOutlineMail />
-                  </a>
-                </div>
-                <div className="p-3 duration-200 ease-in rounded-full shadow-md cursor-pointer shadow-teal-200 hover:scale-110">
-                  <a href="https://dialabk.hashnode.dev/">
-                    <BsFillPersonLinesFill />
-                  </a>
-                </div> */}
-              {/* </div> */}
-            {/* </div> */}
           </div>
         </div>
       </div>

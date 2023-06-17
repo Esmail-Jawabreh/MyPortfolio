@@ -17,19 +17,11 @@ function About() {
           <hr />
           <h4 className="py-2 text-xl">Education</h4>
           <p className="max-w-[400px]">
-            I have completed my Bachelor degree in Civil Engineering in 2021 at
-            Al-Hussein bin Talal University, Ma'an Jordan. It was then when I
-            decided to sign up for something I always wanted to learn..
-            Programming! Recently, I have successfully completed the (Code
-            fellows) intensive Software Development course in Python at
-            Abdul-Aziz Ghurair School Of Advanced Computing (ASAC) that started
-            in Jan,2022 and lasted until July,2022..
+          I completed my Bachelor's degree in Software Engineering in 2022 at Philadelphia University in Amman, Jordan. It was during this time that I decided to pursue my passion for programming. Recently, I successfully completed the (Code Fellows) intensive Software Development course in Python at Abdul-Aziz Ghurair School Of Advanced Computing (ASAC), known as Code Fellows, which began in January 2023 and ended in August 2023.
           </p>
+          <br></br>
           <p className="max-w-[400px]">
-            My study of software development has hugely improved my problem
-            solving and analytical thinking skills, as well as my enthusiasm and
-            willigness towards accepting any challenge that can enhance my
-            knowledge in this field.
+          Studying Software Engineering has significantly improved my problem-solving and analytical thinking skills. I have also developed a strong enthusiasm and willingness to accept any challenges that can further enhance my knowledge in this field.
           </p>
           <button
             className="p-3 border bg-transparent mt-3 text-center"
