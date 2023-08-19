@@ -62,3 +62,17 @@ html {
     }
   }
 }
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 15px;
+
+}
+
+::-webkit-scrollbar-track {
+  background: #FFF;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #565656;
+}

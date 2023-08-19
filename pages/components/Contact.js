@@ -6,14 +6,16 @@ import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import Image from "next/image";
 import emailjs from "@emailjs/browser";
 import Router from 'next/router'
+import IMG from '../../public/assets/BusinessMeeting.jpg'
 
-  function Contact() {
-  
+
+function Contact() {
+
   function sendEmail(e) {
     e.preventDefault();
     Router.push('/')
     alert("Your message was sent. Thank you for contacting me!")
-    
+
 
     emailjs.sendForm(
       "service_19mckop",
@@ -23,63 +25,69 @@ import Router from 'next/router'
     );
   }
 
-  
+
   return (
     <div id="contact" className="w-full lg:h-screen">
+
       <div className="max-w-[750px] m-auto px-2 py-16 w-full">
+
         <h2 className="p-10 tracking-widest uppercase animate-pulse">
           Contact
         </h2>
-        <hr/>
+
+        <hr />
+
         <div className="grid gap-8 lg:grid-cols-5">
-          {/* left */}
+
           <div className="w-full h-full col-span-3 p-4 shadow-xl lg:col-span-2 border mt-3">
-            <div className="h-full lg:p-4">
+
+            <div className="h-full lg:p-8">
+
               <div>
                 <Image
-                  width={500}
-                  height={300}
+                  width={877}
+                  height={432}
                   className="rounded-sm"
-                  src="https://img.freepik.com/free-vector/happy-women-sitting-talking-each-other-dialog-psychologist-tablet-flat-illustration_74855-14078.jpg?t=st=1655518257~exp=1655518857~hmac=a0300273195172e7cf2174814efede3112d07709efde352d507adddd596f4c05&w=740"
+                  src={IMG}
                 />
               </div>
+
               <div>
-       
                 <p className="pt-3 pl-2 tracking-widest text-center">
                   Available for freelance or full-time positions.
                 </p>
               </div>
+
               <div>
+
                 <p className="pt-24 text-center uppercas">get in touch!</p>
 
                 <div className="flex items-center justify-between py-4 ">
                   <div className="p-3 duration-200 ease-in rounded-full shadow-md cursor-pointer shadow-white hover:scale-125">
-                    <a href="https://www.linkedin.com/in/dialaabulkhail/">
+                    <a href="https://www.linkedin.com/in/esmail-jawabreh-80624a250//">
                       <FaLinkedinIn />
                     </a>
                   </div>
-                 
+
                   <div className="p-3 duration-200 ease-in rounded-full shadow-md cursor-pointer shadow-white hover:scale-125">
-                    <a href="https://github.com/dialaabulkhail">
+                    <a href="https://github.com/Esmail-Jawabreh">
                       <FaGithub />
                     </a>
                   </div>
+
                   <div className="p-3 duration-200 ease-in rounded-full shadow-md cursor-pointer shadow-white hover:scale-125">
-                    <a href="mailto:diala.sh.98@gmail.com">
+                    <a href="mailto:esmailjawabreh@gmail.com">
                       <AiOutlineMail />
                     </a>
                   </div>
-                  <div className="p-3 duration-200 ease-in rounded-full shadow-md cursor-pointer shadow-white hover:scale-125">
-                    <a href="https://dialabk.hashnode.dev/">
-                      <BsFillPersonLinesFill />
-                    </a>
-                  </div>
+
                 </div>
               </div>
+
             </div>
           </div>
 
-          {/* right */}
+
           <div className="w-full h-full col-span-3 lg:p-4 border-l mt-3">
             <div className="p-4">
               <form onSubmit={sendEmail}>
@@ -91,7 +99,7 @@ import Router from 'next/router'
                       type="text"
                       name="name"
                       required=""
-                 
+
                     />
                   </div>
 
@@ -147,6 +155,7 @@ import Router from 'next/router'
           </div>
         </div>
 
+
         <div className="flex justify-center mt-8">
           <Link href="/">
             <div className="p-3 duration-200 ease-in cursor-pointer  hover:scale-110 mt-10">
@@ -157,6 +166,7 @@ import Router from 'next/router'
             </div>
           </Link>
         </div>
+
       </div>
     </div>
   );
