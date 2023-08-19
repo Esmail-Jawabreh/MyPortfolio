@@ -29,7 +29,7 @@ function Main() {
                 </a>
               </div>
               <div className="p-4 duration-200 ease-in rounded-full shadow-md cursor-pointer shadow-white hover:scale-125">
-                <a href="https://github.com/Esmail-Jawabreh?">
+                <a href="https://github.com/Esmail-Jawabreh">
                   <FaGithub />
                 </a>
               </div>
